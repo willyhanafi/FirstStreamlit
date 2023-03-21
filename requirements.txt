@@ -1,3 +1,4 @@
 pycaret
 autoviz
 scikit-learn
+streamlit
