@@ -118,9 +118,7 @@ def main():
         set = setup(X,target=y ,session_id=42,train_size= 0.8)
         st.write(set)
         st.success("Setup Model Success")
-        model = st.sidebar.selectbox("Pilih Model",("None","Extreme Gradient Boosting",
-                                                    "Light Gradient Boosting Machine", 
-                                                    "Random Forest Regressor"))
+        model = st.sidebar.selectbox("Pilih Model",("None","Random Forest Regressor"))
         if model == "None":
             st.write(" ")
         elif model == "Extreme Gradient Boosting":
