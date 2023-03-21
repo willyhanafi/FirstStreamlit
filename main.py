@@ -129,20 +129,7 @@ def main():
             st.success("Model Light Gradient Boosting Berhasil Dibuat")
         else : 
             algo = create_model('rf')
-            st.success("Model Random Forest Berhasil Dibuat")
-
-
-        plot = st.sidebar.selectbox("Plot Model",
-                                        ('None','Manifold Learning','Prediction Error Plot','Recursive Feat. Selection'))
-
-        if plot == 'Manifold Learning' :
-            plot_model(algo, plot = 'manifold',display_format='streamlit')
-        if plot =='Prediction Error Plot' :
-            plot_model(algo, plot = 'error',display_format='streamlit')
-        if plot =='Recursive Feat. Selection':
-            plot_model(algo, plot = 'rfe',display_format='streamlit') 
-        else : 
-            None   
+            st.success("Model Random Forest Berhasil Dibuat") 
 
         pred = st.sidebar.checkbox('Prediksi Data')
 
